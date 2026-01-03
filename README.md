@@ -53,7 +53,7 @@ $$
 
  1. 计算账面价值 (BV)
 
-每股账面价值乘以总股数：
+> 每股账面价值乘以总股数：
 
 $$\
 BV = \text{bookvaluepershare} \times \text{shares}
@@ -67,7 +67,7 @@ BV = \text{bookvaluepershare} \times \text{shares}
 
  2. 计算市值 (Market Capitalization)
 
-股票价格乘以总股数：
+> 股票价格乘以总股数：
 
 $$\
 \text{MktCap} = \text{price} \times \text{shares}
