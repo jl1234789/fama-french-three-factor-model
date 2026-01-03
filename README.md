@@ -49,44 +49,46 @@ $$
 
 ## 步骤
 
-### 1. 计算账面市值比 (Book-to-Market, BM) 年度
+## 数据
+- 处理 rf 表格，形成月度数据
+- 处理 price 数据
+- 处理 value 数据
+- 清洗三张表 NaN、不合理值
+- shares(price) 保留年度数据
+- values 保留年度数据
+- 合并股票股价和市值数据
+- 计算 bm（年度）
+- 计算市值
+- 计算股票收益率
+- 转化国债收益率单位
+- 计算因变量超额收益率（因变量）
+- bm 年份值向前 shift 一年（会计年度 t 的 BM → t+1 可用）
+- 论文的 “July t – June t+1” 规则（BM Ratio）
+- 合并股票和 BM 表
+- FF 模型 6 月时间点规则（“年”不是时间点）
+- 时间颗粒度变月
+- exchange_code_x / y
 
- 1. 计算账面价值 (BV)
+## 因子计算
+- 分组
+- BM 分组（账面价值分三组）
+- 市值规模分 2 组
+- 交叉分组筛选股票池
+- 组合的市值加权月收益
+- 根据论文重命名标签
+- 计算 SMB 因子
+- 计算 HML 因子
+- 计算 RM_RF
+- 整合 SMB, HML, RM_RF 三个因子
+- Plot 并分析因子历史行为与经济含义
+- 3 个因子的相关性分析
 
-> 每股账面价值乘以总股数：
+## 因变量计算
+- 理解因变量的计算过程
 
-$$\
-BV = \text{bookvaluepershare} \times \text{shares}
-\$$
+## 模型回归
+- 回归分析
 
-- $$BV\$$：公司总账面价值  
-- $$\\text{bookvaluepershare}\$$：每股账面价值  
-- $$\\text{shares}\$$：总股本数
-
----
-
- 2. 计算市值 (Market Capitalization)
-
-> 股票价格乘以总股数：
-
-$$\
-\text{MktCap} = \text{price} \times \text{shares}
-\$$
-
-- $$\\text{MktCap}\$$：公司市值  
-- $$\\text{price}\$$：股票价格  
-- $$\\text{shares}\$$：总股本数
-
----
-
- 3. 计算账面市值比 (BM)
-
-$$\
-BM = \frac{BV}{\text{MktCap}}
-\$$
-
-- $$BM\$$：账面市值比（Book-to-Market Ratio）  
-- 用于构造 **价值因子 HML**
 
 
 
