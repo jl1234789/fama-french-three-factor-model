@@ -20,3 +20,36 @@
 - rf.csv
   > date: 月份
   > rf： 每月无风险收益率（CRSP计算）
+
+
+# Fama–French 三因子模型公式
+
+## 模型公式
+
+超额收益公式：
+
+$$
+R_{i,t} - R_{f,t} = \alpha_i + \beta_{MKT,i} (R_{m,t} - R_{f,t}) + \beta_{SMB,i} \cdot SMB_t + \beta_{HML,i} \cdot HML_t + \varepsilon_{i,t}
+$$
+
+### 说明
+
+- $$\(R_{i,t}\)$$：股票 \(i\) 在时间 \(t\) 的收益率  
+- $$\(R_{f,t}\)$$：无风险利率  
+- $$\(R_{m,t}\)$$：市场组合收益率  
+- $$\(MKT_t = R_{m,t} - R_{f,t}\)$$：市场超额收益  
+- $$\(SMB_t\)$$：规模因子（Small Minus Big）  
+- $$\(HML_t\)$$：价值因子（High Minus Low）  
+- $$\(\beta_{MKT,i}\)$$：股票对市场因子的暴露  
+- $$\(\beta_{SMB,i}\)$$：股票对规模因子的暴露  
+- $$\(\beta_{HML,i}\)$$：股票对价值因子的暴露  
+- $$\(\alpha_i\)$$：异常收益（无法被因子解释的部分）  
+- $$\(\varepsilon_{i,t}\)$$：随机误差项
+
+
+# 步骤
+
+- 计算BM Ratio
+
+
+
