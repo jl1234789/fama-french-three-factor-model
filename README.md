@@ -22,6 +22,9 @@
   > rf： 每月无风险收益率（CRSP计算）
 
 
+![三因子暴露图](https://drive.google.com/uc?export=view&id=1IP1ytO2m7L1mcZNbPp-60l92whu09D6t)
+
+
 # Fama–French 三因子模型公式
 
 ## 模型公式
