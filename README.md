@@ -47,9 +47,47 @@ $$
 - $$\(\varepsilon_{i,t}\)$$：随机误差项
 
 
-# 步骤
+## 步骤
 
-- 计算BM Ratio
+### 1.计算账面市值比 (Book-to-Market, BM) 
+
+## 1. 计算账面价值 (BV)
+
+每股账面价值乘以总股数：
+
+$$\
+BV = \text{bookvaluepershare} \times \text{shares}
+\$$
+
+- $$BV\$$：公司总账面价值  
+- $$\\text{bookvaluepershare}\$$：每股账面价值  
+- $$\\text{shares}\$$：总股本数
+
+---
+
+## 2. 计算市值 (Market Capitalization)
+
+股票价格乘以总股数：
+
+$$\
+\text{MktCap} = \text{price} \times \text{shares}
+\$$
+
+- $$\\text{MktCap}\$$：公司市值  
+- $$\\text{price}\$$：股票价格  
+- $$\\text{shares}\$$：总股本数
+
+---
+
+## 3. 计算账面市值比 (BM)
+
+$$\
+BM = \frac{BV}{\text{MktCap}}
+\$$
+
+- $$BM\$$：账面市值比（Book-to-Market Ratio）  
+- 用于构造 **价值因子 HML**
+
 
 
 
