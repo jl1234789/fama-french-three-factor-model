@@ -51,7 +51,7 @@ $$
 
 ### 1.计算账面市值比 (Book-to-Market, BM) 
 
-- 1. 计算账面价值 (BV)
+ 1. 计算账面价值 (BV)
 
 每股账面价值乘以总股数：
 
@@ -65,7 +65,7 @@ BV = \text{bookvaluepershare} \times \text{shares}
 
 ---
 
-- 2. 计算市值 (Market Capitalization)
+ 2. 计算市值 (Market Capitalization)
 
 股票价格乘以总股数：
 
@@ -79,7 +79,7 @@ $$\
 
 ---
 
-- 3. 计算账面市值比 (BM)
+ 3. 计算账面市值比 (BM)
 
 $$\
 BM = \frac{BV}{\text{MktCap}}
