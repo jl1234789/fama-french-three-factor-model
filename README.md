@@ -1,7 +1,7 @@
 # Fama-French 模型学习笔记（Python）
 
 - reference: https://github.com/nkuguanrui/FamaFrenchThreeFacorModel/
-
+- 月度
 # 数据
 借用清洗好的数据集
 
@@ -49,7 +49,7 @@ $$
 
 ## 步骤
 
-### 1.计算账面市值比 (Book-to-Market, BM) 
+### 1.计算账面市值比 (Book-to-Market, BM) 年度
 
  1. 计算账面价值 (BV)
 
